@@ -61,6 +61,10 @@
 .nav_link{
     margin-left: auto;
     padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2en;
 }
 
 .nav_links{
@@ -79,6 +83,39 @@
 
 .nav_close{
     display: var(--show, none);
+}
+
+
+
+
+
+
+.hero_container{
+    max-width: 800px;
+    --padding-container:0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1en;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.hero_title{
+    font-size: 3rem;
+}
+.hero_paragraph{
+    margin-bottom: 20px;
+
+}
+.cta{
+    display: inline-block;
+    background-color: #2091f9;
+    justify-self: center ;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px, 30px; 
+    border-radius: 32px;
+
 }
 
 
